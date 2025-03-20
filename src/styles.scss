@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+$body-bg: #1a1a1a;
+$body-color: #ffffff;
+$theme-colors: (
+  "primary": #ffd700,
+  "dark": #1a1a1a
+);
+
+:root {
+  --ds-dark: #1a1a1a;
+  --ds-gold: #ffd700;
+  --ds-text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--ds-dark);
+  color: var(--ds-text);
+  font-family: 'Cinzel', serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1600px; // Aumentado de 1200px para 1600px
+  margin: 0 auto;
+  padding: 0 2rem; // Aumentado de 1rem para 2rem
+  flex: 1 0 auto;
+}
+
+/* You can add global styles to this file, and also import other style files */

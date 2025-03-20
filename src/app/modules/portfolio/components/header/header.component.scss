@@ -1,0 +1,38 @@
+.header {
+  background-color: var(--ds-dark);
+  border-bottom: 2px solid #3d3d3d;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .navbar-brand {
+      color: var(--ds-text);
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      
+      a {
+        color: var(--ds-text);
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: var(--ds-gold);
+        }
+      }
+    }
+  }
+}

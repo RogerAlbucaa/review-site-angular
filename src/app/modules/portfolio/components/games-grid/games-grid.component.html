@@ -1,0 +1,15 @@
+<section class="games-grid">
+  <div class="container">
+    <div class="grid">
+      @for (game of games; track game.id) {
+        <div class="game-card" [routerLink]="['/game', game.id]">
+          <img [src]="game.imageUrl" [alt]="game.title">
+          <div class="game-info">
+            <h3>{{ game.title }}</h3>
+            <span class="rating">{{ game.rating }}/10</span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
